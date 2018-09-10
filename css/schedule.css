@@ -1,0 +1,126 @@
+.list{
+    width: 85%;
+    margin: 100px auto;
+}
+.list table{
+    background-color: #f7f7f7;
+    font-size: 20px;
+    text-align: center;
+    width: 33.3333%;
+}
+.list_view{
+    overflow: hidden;
+    width: 100%;
+}
+.list_view .all{
+    width: 300%;
+    display: flex;
+}
+.list table tr{
+     height: 80px;
+ }
+.ticket {
+    color: rgb(240,61,55) ;
+    font-weight: bolder;
+}
+.start {
+    font-weight: bolder;
+}
+@keyframes flow {
+    0%{
+        z-index: 0;
+        height: 80px;
+    }100%{
+        z-index: 10;
+             height:100px ;
+             box-shadow: 3px 3px 3px 1px grey;
+    }
+}
+.list table tr:nth-child(2n){
+    background-color: white;
+}
+.list_top{
+    margin: 20px auto;
+}
+.list_top a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(240,61,55);
+}
+.list button{
+    box-shadow: 3px 3px 3px 1px grey;
+    border: none;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(240,61,55);
+}#foot{
+
+     text-align: center;
+     padding-top: 30px;
+     height: 150px;
+     background-color: rgb(38,36,38);
+     width: 100%;
+     color: rgb(157, 156, 152);
+ }
+@keyframes myfirst
+{
+    from  {background-color:white}
+    to  {background-color: red}
+}
+
+.loading{
+    width: 70%;
+    margin: 120px auto;
+    position: relative;
+    display: flex;
+}
+.loading div{
+    position: relative;
+}
+.loading div span:nth-child(2){
+    width: 100px;
+    top:30px;
+    left: -40px;
+    position: absolute;
+}
+.loading div span:nth-child(1){
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+.run{
+    flex: 1;
+    display: flex;
+}
+.run hr{
+    margin-left: -3px;
+    border: 0;
+}
+.loading hr{
+    background-color: red;
+    flex: 1;
+    height: 5px;
+}
+.loading hr:nth-of-type(1){
+    animation:myfirst 2000ms infinite ;
+    animation-iteration-count:1;
+    -webkit-animation:myfirst 2000ms infinite  ; /* Safari 和 Chrome */
+    -webkit-animation-iteration-count:1;
+}
+button{
+    cursor: pointer;
+}

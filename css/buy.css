@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+}
+body,html{
+    height: 100%;
+}
+@keyframes myfirst
+{
+    from  {background-color:white}
+    to  {background-color: red}
+}
+
+#foot{
+    text-align: center;
+    padding-top: 30px;
+    height: 150px;
+    background-color: rgb(38,36,38);
+    width: 100%;
+    color: rgb(157, 156, 152);
+}
+.loading{
+    width: 70%;
+    margin: 120px auto;
+    position: relative;
+    display: flex;
+}
+.loading div{
+    position: relative;
+}
+.loading div span:nth-child(2){
+    width: 100px;
+    top:30px;
+    left: -40px;
+    position: absolute;
+}
+.loading div span:nth-child(1){
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+.run{
+    flex: 1;
+    display: flex;
+}
+.run hr{
+    margin-left: -3px;
+    border: 0;
+}
+.loading hr{
+    background-color: red;
+    flex: 1;
+    height: 5px;
+}
+.loading hr:nth-of-type(2){
+    animation:myfirst 2000ms infinite ;
+    animation-iteration-count:1;
+    -webkit-animation:myfirst 2000ms infinite  ; /* Safari 和 Chrome */
+    -webkit-animation-iteration-count:1;
+}
+
+
+
+.main{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    height: 700px;
+    border: grey 1px solid;
+}
+.main_left{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 8;
+    align-items: center;
+    justify-content: space-around;
+    align-content:center;
+}
+.main_left img{
+    width: 35px;
+    cursor: pointer;
+}
+.main_right{
+    flex: 4;
+    background-color: rgb(249,249,249);
+}
+
+.seat_talk{
+    width: 70%;
+    justify-content: space-around;
+    display: flex;
+}
+.ping{
+
+    width: 100%;
+    margin-left: 30%;
+}
+.ping div{
+    width: 70%;
+    height: 10px;
+    box-shadow: 3px 3px 3px 3px grey;
+}
+.seat div li{
+    list-style-type: none;
+}
+.list li+li{
+   margin-top: 22px;
+}
+.seat{
+    width: 80%;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-around;
+}
+.main_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.right_top{
+    display: flex;
+    justify-content: space-around;
+}
+.right_middle{
+    position: relative;
+    left: 10px;
+}
+.key{
+    color: grey;
+}
+button{
+    width: 70%;
+    box-shadow: 2px 2px 2px 2px gainsboro;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    height: 40px;
+    margin: 0 auto;
+    background-color: red;
+}
+.buy{
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes rotate {
+    0%{
+        transform: rotateY(0);
+        width: 500px;
+        height: 600px;
+    }
+    33%{
+        transform: rotateY(90deg);
+        width: 200px;
+        height: 300px;
+    }
+    66%{
+        transform: rotateY(180deg);
+        width: 250px;
+        height: 300px;
+    }
+    100%{
+        transform: rotateY(360deg);
+        width: 500px;
+        height: 600px;
+    }
+}
+.zhi{
+    position: relative;
+    background-color: whitesmoke;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.zhi_top{
+    flex: 1;
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+#close_zhi{
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+}
+.zhi_middle{
+    overflow: hidden;
+    padding-top: 30px;
+    width: 80%;
+    flex: 13;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+}
+.zhi button{
+    /*flex: 1;*/
+    /*position: relative;*/
+    /*top:-80px;*/
+    width: 50%;
+    /*height: 180px;*/
+}
+.zhan{
+    flex: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.value div+div{
+    margin-top: 10px;
+}
+.value>div span:nth-last-child(1){
+    color:red ;
+    font-weight: bolder;
+}

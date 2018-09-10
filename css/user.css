@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    background-image: url("../img/user_bg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.user_main{
+    width: 80%;
+    background-color: white;
+    position: absolute;
+    top:100px;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px groove black;
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    border: 1px groove black;
+    flex: 2;
+    background-color: #b1dbf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body{
+    flex: 3;
+    background-color: silver;
+    display: flex;
+}
+
+.head{
+    background-color: white;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    position: relative;
+}
+.head>img{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+}
+.head img{
+    height: 130px;
+    width: 130px;
+}
+.head>div>img{
+    vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+}
+.head>div{
+    text-align: center;
+    position: absolute;
+    width: 300px;
+    margin-left: -80px;
+
+}
+
+
+.nav{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: beige;
+}
+.nav :nth-child(1){
+    background-color:rgb(233,66,56);
+    color: white;
+}
+.nav a{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    flex: 1;
+    background-color: white;
+    border: 1px grey solid;
+    color:rgb(233,66,56)
+}
+.nav a img{
+    margin-left: 15px;
+    width: 40px;
+    vertical-align: middle;
+}
+.count{
+    flex: 5;
+    background-color: coral;
+    overflow: hidden;
+}
+
+
+.all{
+    background-color: blue;
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.all>div{
+    background-color: lightcoral;
+    height:100%;
+    flex: 1;
+}
+#user img{
+    width: 25px;
+    vertical-align: bottom;
+    margin-left: 10px;
+}
+#user {
+    font-size: 18px;
+    letter-spacing:3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#user>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 80%;
+}
+#buy{
+    overflow-y:scroll ;
+}
+#buy table{
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+#buy table td{
+    height: 55px;
+}
+#buy table tr:hover{
+    height: 55px;
+    background-color: #f1a02a;
+}
+
+#my{
+    overflow-y: scroll;
+}
+.ping{
+    margin: 0 auto;
+    width:90%;
+    box-shadow: 0px 0px 1px 1px gainsboro;
+}
+
+.out_ticket{
+    color: red;
+    cursor: pointer;
+}
+input,select{
+    width: 150px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color:lightcoral ;
+    outline:none;
+    border-bottom: 1px solid black;
+}
+
+.right{
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+    border-radius: 50%;
+}
+.error{
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+}
+.button{
+    width: 60px;
+    height:25px;
+    
+   /*  border: none; */
+    background-color: gray;
+}

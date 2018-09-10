@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/movie_fu.css" rel="stylesheet">
+    <link href="css/top.css" rel="stylesheet">
+    <link href="css/login_form.css" rel="stylesheet">
+    <link href="css/schedule.css" rel="stylesheet">
+
+    <script src="jquery-1.7.2/jquery.js" ></script>
+    <script src="carhartl-jquery-cookie-92b7715/jquery.cookie.js"></script>-
+    <script src="js/status.js"></script>
+    <script src="js/schedule.js"></script>
+</head>
+<body>
+<div id="top">
+    <img src="img/logo4.png">
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="movie.html">购票</a></li>
+        <li><a href="paihangbang.html">排行榜</a></li>
+    </ul>
+
+    <ul id="huan">
+        <li id="login">登录</li>
+        <li id="register"><a href="register.html">注册</a></li>
+        </ul>
+
+</div>
+
+
+<div class="main" style="top:35px;">
+
+    <div class="movie_count">
+        <img src="img/movie_fu.jpg@464w_644h_1e_1c">
+        <div class="movie_font">
+            <h1>复仇者联盟3：无限战争</h1>
+            <p>Avengers:Infinity War</p>
+            <p>动作,冒险,科幻</p>
+            <p>美国 / 150分钟</p>
+            <p>2018-05-11大陆上映</p>
+        </div>
+        <div class="movie_button">
+            <button id="button_want">❤想看</button>
+            <button id="button_talk" style="font-size: 15px">★评分</button>
+            <button id="button_buy">查看更多信息</button>
+        </div>
+
+        <div class="movie_money">
+            <p>累计票房</p>
+            <h2 style="margin-top: -10px">20.00亿</h2>
+        </div>
+
+
+    </div>
+
+</div>
+
+<div class="loading">
+    <div>
+        <span>1</span>
+        <span style="color: red">选择影片场次</span>
+    </div>
+
+    <hr>
+
+    <div>
+        <span>2</span>
+        <span>选择座位</span>
+    </div>
+    <hr style="background-color:#ff3f36;opacity: 0.3;">
+
+
+    <div>
+        <span>3</span>
+        <span>14分钟内付款</span>
+    </div>
+
+    <hr style="background-color:#ff3f36;opacity: 0.3;">
+
+    <div>
+        <span>4</span>
+        <span>电影院取票</span>
+    </div>
+</div>
+
+<div class="list">
+
+    <div class="list_top">
+        <span>观影时间:</span>
+        <!--<a href="#list1">6月10日</a>-->
+        <!--<a href="#list2">6月11日</a>-->
+        <!--<a href="#list3">6月12日</a>-->
+    </div>
+    <hr>
+
+    <div class="list_view">
+        <div class="all">
+
+            <!--<table cellpadding="0" cellspacing="0" id="list1"></table>-->
+            <!--<table cellpadding="0" cellspacing="0" id="list2">-->
+                <!--<tr>-->
+                    <!--<th>时间</th>-->
+                    <!--<th>语种</th>-->
+                    <!--<th>放映厅</th>-->
+                    <!--<th>售价</th>-->
+                    <!--<th>选座购票</th>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="start">9:20</td>-->
+                    <!--<td class="language">英语</td>-->
+                    <!--<td class="room">A1</td>-->
+                    <!--<td class="ticket">￥35</td>-->
+                    <!--<td><button>选座购票</button></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="start">9:20</td>-->
+                    <!--<td class="language">英语</td>-->
+                    <!--<td class="room">A1</td>-->
+                    <!--<td class="ticket">￥35</td>-->
+                    <!--<td><button>选座购票</button></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="start">9:20</td>-->
+                    <!--<td class="language">英语</td>-->
+                    <!--<td class="room">A1</td>-->
+                    <!--<td class="ticket">￥35</td>-->
+                    <!--<td><button>选座购票</button></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="start">9:20</td>-->
+                    <!--<td class="language">英语</td>-->
+                    <!--<td class="room">A1</td>-->
+                    <!--<td class="ticket">￥35</td>-->
+                    <!--<td><button>选座购票</button></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="start">9:20</td>-->
+                    <!--<td class="language">英语</td>-->
+                    <!--<td class="room">A1</td>-->
+                    <!--<td class="ticket">￥35</td>-->
+                    <!--<td><button>选座购票</button></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="start">9:20</td>-->
+                    <!--<td class="language">英语</td>-->
+                    <!--<td class="room">A1</td>-->
+                    <!--<td class="ticket">￥35</td>-->
+                    <!--<td><button>选座购票</button></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="start">9:20</td>-->
+                    <!--<td class="language">英语</td>-->
+                    <!--<td class="room">A1</td>-->
+                    <!--<td class="ticket">￥35</td>-->
+                    <!--<td><button>选座购票</button></td>-->
+                <!--</tr>-->
+            <!--</table>-->
+            <!--<table cellpadding="0" cellspacing="0" id="list3">-->
+                <!--<tr>-->
+                    <!--<th>时间</th>-->
+                    <!--<th>语种</th>-->
+                    <!--<th>放映厅</th>-->
+                    <!--<th>售价</th>-->
+                    <!--<th>选座购票</th>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="start">9:20</td>-->
+                    <!--<td class="language">英语</td>-->
+                    <!--<td class="room">A1</td>-->
+                    <!--<td class="ticket">￥35</td>-->
+                    <!--<td><button>选座购票</button></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="start">9:20</td>-->
+                    <!--<td class="language">英语</td>-->
+                    <!--<td class="room">A1</td>-->
+                    <!--<td class="ticket">￥35</td>-->
+                    <!--<td><button>选座购票</button></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="start">9:20</td>-->
+                    <!--<td class="language">英语</td>-->
+                    <!--<td class="room">A1</td>-->
+                    <!--<td class="ticket">￥35</td>-->
+                    <!--<td><button>选座购票</button></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="start">9:20</td>-->
+                    <!--<td class="language">英语</td>-->
+                    <!--<td class="room">A1</td>-->
+                    <!--<td class="ticket">￥35</td>-->
+                    <!--<td><button>选座购票</button></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="start">9:20</td>-->
+                    <!--<td class="language">英语</td>-->
+                    <!--<td class="room">A1</td>-->
+                    <!--<td class="ticket">￥35</td>-->
+                    <!--<td><button>选座购票</button></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="start">9:20</td>-->
+                    <!--<td class="language">英语</td>-->
+                    <!--<td class="room">A1</td>-->
+                    <!--<td class="ticket">￥35</td>-->
+                    <!--<td><button>选座购票</button></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="start">9:20</td>-->
+                    <!--<td class="language">英语</td>-->
+                    <!--<td class="room">A1</td>-->
+                    <!--<td class="ticket">￥35</td>-->
+                    <!--<td><button>选座购票</button></td>-->
+                <!--</tr>-->
+            <!--</table>-->
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="talk_it" style="display: none">
+    <div>
+        <span id="close_talk"> x </span>
+        <div class="star">
+            <div>
+                <img src="img/starX.png">
+                <img src="img/starX.png">
+                <img src="img/starX.png">
+                <img src="img/starX.png">
+                <img src="img/starX.png">
+            </div>
+            <p>0星</p>
+            <em>点击评分</em>
+        </div>
+
+        <div  class="pinglun">
+            <textarea placeholder="说点什么"></textarea>
+            <button>评论</button>
+        </div>
+    </div>
+</div>
+<div id="foot">
+    <p>开发小组：咸鱼影业旗下软工1602张鑫小组</p>
+    <p>隶属于：陕西西安咸鱼影业传媒有限公司</p>
+    <p>违法和不良信息举报电话: 18392120131 举报邮箱:1132256103@qq.com</p>
+    <p>友情链接：http://www.xiyou.edu.cn/</p>
+</div>
+<div class="black dis">
+    <form  class="dark-matter">
+        <span id="cut">X</span>
+        <h1>欢迎登录
+            <span>请填写以下信息.</span>
+        </h1>
+
+        <label>
+            <span>用户名:</span>
+            <input id="name" type="text" name="username" placeholder="用 户 名" value="" required/>
+            <p   id="check1" style="margin-top: -2%;margin-left: 25%" ></p>
+        </label>
+
+        <label>
+            <span>用户密码:</span>
+            <input id="email" type="password" name="password" placeholder="密 码" value="" require/>
+            <p   id="check2" style="margin-top: -2%;margin-left: 25%" ></p>
+        </label>
+
+        <label>
+            <span>你的身份:</span>
+            <select name="id">
+                <option value="manger">管理员</option>
+                <option value="user" selected>用户</option>
+            </select>
+        </label>
+
+        <label>
+            <span>&nbsp;</span>
+            <input type="button" class="button" value="登录" />
+        </label>
+        <a href="register.html">没有账号？快去注册-></a>
+    </form>
+</div>
+</body>
+</html>

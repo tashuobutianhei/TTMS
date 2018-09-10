@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <link href="css/user.css" rel="stylesheet">
+    <link href="css/top.css" rel="stylesheet">
+    <link href="css/login_form.css" rel="stylesheet">
+
+
+    <script src="jquery-1.7.2/jquery.js" ></script>
+    <script src="carhartl-jquery-cookie-92b7715/jquery.cookie.js"></script>
+    <script src="js/status.js"></script>
+
+    <script src="js/user.js"></script>
+</head>
+<body>
+<div id="top">
+    <img src="img/logo4.png">
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="movie.html">购票</a></li>
+        <li><a href="paihangbang.html">排行榜</a></li>
+    </ul>
+
+    <ul id="huan">
+        <li id="login">登录</li>
+        <li id="register"><a href="register.html">注册</a></li>
+    </ul>
+
+</div>
+
+
+<div class="user_main">
+    <div class="top">
+        <div class="head">
+            <img src="img/boy.png">
+            <div>修改头像<img src="img/change.png"></div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="nav">
+            <a href="#user">个人信息 <img src="img/point.png"></a>
+            <a href="#buy">购票记录</a>
+            <a href="#my">我的评论 </a>
+            <a href="#help">更多与帮助></a>
+        </div>
+        <div class="count">
+            <div class="all">
+                <div id="user">
+                    <div>
+                        <div><span>用户名:</span></div>
+                        <div><span>密码:</span><span>********</span><img src="img/change.png"></div>
+                        <div><span>性别:</span></div>
+                        <div><span>手机号:</span></div>
+                    </div>
+                </div>
+                <div id="buy">
+                    <table  style="border-collapse:collapse;">
+                        <tr>
+                            <th>电影名:</th>
+                            <th>语种:</th>
+                            <th>类型:</th>
+                            <th>片长:</th>
+                            <th>开始时间:</th>
+                            <th>票价</th>
+                            <th>退票</th>
+                        </tr>
+
+                    </table>
+                </div>
+                <div id="my">
+                    <div class="ping">
+                        <div><span>电影: </span><span>复仇者联盟3</span></div>
+                        <div><span>评分：</span><span>4星</span></div>
+                        <p>悬疑犯罪类的设定，主角也是坏人这种设定还是挺难得的。包括背后设计的背景，也可对应现实。遗憾就是迷题解决的太随意了，不够过瘾。</p>
+                    </div>
+                    <div class="ping">
+                        <div><span>电影: </span><span>复仇者联盟3</span></div>
+                        <div><span>评分：</span><span>4星</span></div>
+                        <p>悬疑犯罪类的设定，主角也是坏人这种设定还是挺难得的。包括背后设计的背景，也可对应现实。遗憾就是迷题解决的太随意了，不够过瘾。</p>
+                    </div>
+                    <div class="ping">
+                        <div><span>电影: </span><span>复仇者联盟3</span></div>
+                        <div><span>评分：</span><span>4星</span></div>
+                        <p>悬疑犯罪类的设定，主角也是坏人这种设定还是挺难得的。包括背后设计的背景，也可对应现实。遗憾就是迷题解决的太随意了，不够过瘾。</p>
+                    </div>
+                </div>
+                <div id="help">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="black dis">
+    <form  class="dark-matter">
+        <span id="cut">X</span>
+        <h1>欢迎登录
+            <span>请填写以下信息.</span>
+        </h1>
+
+        <label>
+            <span>用户名:</span>
+            <input id="name" type="text" name="username" placeholder="用 户 名" value="" required/>
+            <p   id="check1" style="margin-top: -2%;margin-left: 25%" ></p>
+        </label>
+
+        <label>
+            <span>用户密码:</span>
+            <input id="email" type="password" name="password" placeholder="密 码" value="" require/>
+            <p   id="check2" style="margin-top: -2%;margin-left: 25%" ></p>
+        </label>
+
+        <label>
+            <span>你的身份:</span>
+            <select name="id">
+                <option value="manger">管理员</option>
+                <option value="user" selected>用户</option>
+            </select>
+        </label>
+
+        <label>
+            <span>&nbsp;</span>
+            <input type="button" class="button" value="登录" />
+        </label>
+        <a href="register.html">没有账号？快去注册-></a>
+    </form>
+</div>
+</body>
+</html>

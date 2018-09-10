@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>咸鱼影业</title>
+    <link href="css/top.css" rel="stylesheet">
+    <link href="css/login_form.css" rel="stylesheet">
+    <link href="css/movie.css" rel="stylesheet">
+
+
+    <script src="jquery-1.7.2/jquery.js" ></script>
+    <script src="carhartl-jquery-cookie-92b7715/jquery.cookie.js"></script>
+    <script src="js/status.js"></script>
+    <script src="js/movie.js"></script>
+    <script type="text/javascript" src="js/canvas_bg.js" ></script>
+
+</head>
+<body>
+
+<div id="top">
+    <img src="img/logo4.png">
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="movie.html">购票</a></li>
+        <li><a href="paihangbang.html">排行榜</a></li>
+    </ul>
+
+    <ul id="huan">
+        <li id="login">登录</li>
+        <li id="register"><a href="register.html">注册</a></li>
+    </ul>
+</div>
+<canvas id="c" style="position: fixed;z-index: -1;text-align: center;top: 0;bottom: 0;height: 100%"></canvas>
+<div class="movie_main">
+    <h2>正在热映</h2>
+
+    <div class="guide">
+        <div class="guide_language">
+            <span class="key">语种</span>
+            <div>
+                <span class="link">全部</span>
+                <span>中文</span><span>英语</span><span>日语</span><span>英语</span>
+                <span>德语</span><span>泰语</span><span>西班牙语</span>
+            </div>
+        </div>
+        <div class="guide_type">
+            <span class="key">类型</span>
+            <div>
+            <span  class="link">全部</span>
+            <span>喜剧</span><span>剧情</span><span>惊悚</span><span>恐怖</span>
+            <span>战争</span><span>冒险</span><span>古装</span><span>历史</span>
+            <span>武侠</span><span>纪录片</span><span>犯罪</span><span>奇幻</span>
+            <span>家庭</span><span>爱情</span><span>动画</span>
+            </div>
+        </div>
+        <div class="guide_time">
+            <span class="key">时长:</span>
+            <div>
+            <span  class="link">全部</span><span>90分钟</span><span>100分钟</span><span>110分钟</span><span>120分钟</span><span>130分钟</span>
+            <span>140分钟</span><span>150分钟</span><span>短片</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="view">
+        <div id="all">
+        </div>
+    </div>
+
+    <ul>
+        <li id="first"><a href="#a0">首页</a></li>
+    </ul>
+</div>
+
+<div class="black dis">
+    <form  class="dark-matter">
+        <span id="cut">X</span>
+        <h1>欢迎登录
+            <span>请填写以下信息.</span>
+        </h1>
+
+        <label>
+            <span>用户名:</span>
+            <input id="name" type="text" name="username" placeholder="用 户 名" value="" required/>
+            <p   id="check1" style="margin-top: -2%;margin-left: 25%" ></p>
+        </label>
+
+        <label>
+            <span>用户密码:</span>
+            <input id="email" type="password" name="password" placeholder="密 码" value="" require/>
+            <p   id="check2" style="margin-top: -2%;margin-left: 25%" ></p>
+        </label>
+
+        <label>
+            <span>你的身份:</span>
+            <select name="id">
+                <option value="manger">管理员</option>
+                <option value="user" selected>用户</option>
+            </select>
+        </label>
+
+        <label>
+            <span>&nbsp;</span>
+            <input type="button" class="button" value="登录" />
+        </label>
+        <a href="register.html">没有账号？快去注册-></a>
+    </form>
+</div>
+<div id="foot">
+    <p>开发小组：咸鱼影业旗下软工1602张鑫小组</p>
+    <p>隶属于：陕西西安咸鱼影业传媒有限公司</p>
+    <p>违法和不良信息举报电话: 18392120131 举报邮箱:1132256103@qq.com</p>
+    <p>友情链接：http://www.xiyou.edu.cn/</p>
+</div>
+</body>
+</html>

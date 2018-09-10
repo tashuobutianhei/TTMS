@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>热映口碑榜 - 咸鱼影业 - 一网打尽好电影</title>
+		<link href="css/top.css" rel="stylesheet">
+		<link href="css/login_form.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/paihangbang.css"/>
+		<script src="jquery-1.7.2/jquery.js" ></script>
+		<script src="carhartl-jquery-cookie-92b7715/jquery.cookie.js"></script>
+		<script src="js/status.js"></script>
+		<script src="js/paihangbang.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="top">
+			<img src="img/logo4.png">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="movie.html">购票</a></li>
+				<li><a href="paihangbang.html">排行榜</a></li>
+			</ul>
+
+			<ul id="huan">
+				<li id="login">登录</li>
+				<li id="register"><a href="register.html">注册</a></li>
+				</ul>
+
+		</div>
+		<!--体部-->
+		<div id="section">
+			<p class="rule">2018-05-20 <span>已更新</span></p>
+			<p class="rule">榜单规则：将昨日国内热映的影片，按照评分从高到低排列取前10名，每天上午10点更新。相关数据来源于“咸鱼专业版”及“咸鱼电影库”。</p>
+			<ol id="cinemas">
+
+				<!--<li class="cinema">-->
+					<!--<span class="num">&hearts;</span>-->
+					<!--<a href="#"><img src="img/bang3.jpg@160w_220h_1e_1c" alt="头号玩家" title="头号玩家"/></a>-->
+					<!--<div style="color: white">-->
+						<!--<a href="#"><h2>头号玩家</h2></a>-->
+						<!--<p class="actor">主演：泰尔·谢里丹,奥利维亚·库克,本·门德尔森</p>-->
+						<!--<span class="time">上映时间：2018-03-30</span>-->
+						<!--<i class="score"><span>9.</span>1</i>-->
+						<!--<button>前去观影</button>-->
+					<!--</div>-->
+				<!--</li>-->
+
+				<!--<li class="cinema">-->
+					<!--<i class="num">2</i>-->
+					<!--<a href="#"><img src="img/bang2.jpg@160w_220h_1e_1c" alt="狂暴巨兽" title="狂暴巨兽"/></a>-->
+					<!--<div >-->
+						<!--<a href="#"><h2>狂暴巨兽</h2></a>-->
+						<!--<p class="actor">主演：道恩·强森,娜奥米·哈里斯,杰弗里·迪恩·摩根</p>-->
+						<!--<span class="time">上映时间：2018-04-13</span>-->
+						<!--<i class="score"><span>9.</span>0</i>-->
+					<!--</div>-->
+				<!--</li>-->
+
+				<!--<li class="cinema">-->
+					<!--<i class="num">3</i>-->
+					<!--<a href="#"><img src="img/bang4.jpg@160w_220h_1e_1c" alt="起跑线" title="起跑线"/></a>-->
+					<!--<div >-->
+						<!--<a href="#"><h2>超时空同居</h2></a>-->
+						<!--<p class="actor">主演：雷佳音,佟丽娅,徐峥</p>-->
+						<!--<span class="time">上映时间：2018-04-13</span>-->
+						<!--<i class="score"><span>8.</span>9</i>-->
+					<!--</div>-->
+				<!--</li>-->
+				<!--<li class="cinema">-->
+					<!--<i class="num">4</i>-->
+					<!--<a href="#"><img src="img/bang1.jpg@160w_220h_1e_1c" alt="黄金花" title="黄金花"/></a>-->
+					<!--<div >-->
+						<!--<a href="#"><h2>巴霍巴利王2</h2></a>-->
+						<!--<p class="actor">主演：帕拉巴斯,拉纳·达格巴帝,安努舒卡·谢蒂</p>-->
+						<!--<span class="time">上映时间：2018-05-04</span>-->
+						<!--<i class="score"><span>8.</span>8</i>-->
+					<!--</div>-->
+				<!--</li>-->
+			</ol>
+		
+   		</div>
+
+
+		<div class="black dis">
+			<form  class="dark-matter">
+				<span id="cut">X</span>
+				<h1>欢迎登录
+					<span>请填写以下信息.</span>
+				</h1>
+
+				<label>
+					<span>用户名:</span>
+					<input id="name" type="text" name="username" placeholder="用 户 名" value="" required/>
+					<p   id="check1" style="margin-top: -2%;margin-left: 25%" ></p>
+				</label>
+
+				<label>
+					<span>用户密码:</span>
+					<input id="email" type="password" name="password" placeholder="密 码" value="" require/>
+					<p   id="check2" style="margin-top: -2%;margin-left: 25%" ></p>
+				</label>
+
+				<label>
+					<span>你的身份:</span>
+					<select name="id">
+						<option value="manger">管理员</option>
+						<option value="user" selected>用户</option>
+					</select>
+				</label>
+
+				<label>
+					<span>&nbsp;</span>
+					<input type="button" class="button" value="登录" />
+				</label>
+				<a href="register.html">没有账号？快去注册-></a>
+			</form>
+		</div>
+	</body>
+</html>

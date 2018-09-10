@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>咸鱼影业系统管理</title>
+    <link rel="stylesheet" href="css/manger2.0.css" charset="utf-8">
+    <link rel="stylesheet" href="css/login_form.css" charset="utf-8">
+    <link rel="stylesheet" href="css/top.css" charset="utf-8">
+    <link media="screen and (max-width:1000px)" rel="stylesheet" href="css/manger2.0.2.css" charset="utf-8">
+
+    <script src="../jquery-1.7.2/jquery.js" charset="utf-8"></script>
+    <script src="../carhartl-jquery-cookie-92b7715/jquery.cookie.js" charset="utf-8"></script>
+    <script src="js/status.js" charset="utf-8"></script>
+    <script src="js/manger2.0.js" charset="utf-8"></script>
+</head>
+<body>
+<div id="top">
+    <img src="img/logo4.png">
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="movie.html">购票</a></li>
+        <li><a href="paihangbang.html">排行榜</a></li>
+    </ul>
+
+    <ul id="huan">
+        <li id="login">登录</li>
+        <li id="register"><a href="register.html">注册</a></li>
+    </ul>
+</div>
+<div id="jsi-cherry-container" class="container"></div>
+<nav>
+    <a id='watch1' href="#watch">查看影片<hr width="80%"></a>
+    <a id='remove1' href="#seat">演出厅管理<hr width="80%"></a>
+    <a id='people1' href="#people">人员管理<hr width="80%"></a>
+    <a id='money1' href="#money">票房统计</a>
+</nav>
+
+<div class="view">
+    <div style=" width: 400%;display: flex;height: 100%;">
+        <div class="bot" id="watch">
+            <div class="include">
+                <div class="include_look">
+                    <!--<div class="movie">-->
+                        <!--<div class="view_top"><span class="number">001</span> <span class="name">复仇者联盟</span><img src='img/down.png'class="up" data-num='yes'></div>-->
+                        <!--<div class="view_body">-->
+                            <!--<div class="view_middle">-->
+                                    <!--<img src="img/fczlm3.png">-->
+                                    <!--<table cellspacing="10">-->
+                                        <!--<tr>-->
+                                            <!--<th>导演:</th>-->
+                                            <!--<th class="director">安东尼·罗素</th>-->
+                                        <!--</tr>-->
+
+                                        <!--<tr>-->
+                                            <!--<th>语种:</th>-->
+                                            <!--<th class="language">英语</th>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<th>类型:</th>-->
+                                            <!--<th class="type">动作/科幻/奇幻/冒险</th>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<th>片长:</th>-->
+                                            <!--<th class="time">150分钟</th>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<th>影片状态:</th>-->
+                                            <!--<th class="status">上线中</th>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<th>增加排片:</th>-->
+                                            <!--<th ><button class="addmovie">增加排片</button></th>-->
+                                        <!--</tr>-->
+                                    <!--</table>-->
+                            <!--</div>-->
+                            <!--<div class="view_bottom">-->
+                                <!--<table class="count" id="movie1">-->
+                                    <!--<tr>-->
+                                        <!--<th>名称</th>-->
+                                        <!--<th>时长</th>-->
+                                        <!--<th>票价</th>-->
+                                        <!--<th>演出厅</th>-->
+                                        <!--<th>开始时间</th>-->
+                                        <!--<th>删除排片</th>-->
+                                    <!--</tr>-->
+                                    <!--<tr id="a1">-->
+                                        <!--<th>复仇者联盟</th>-->
+                                        <!--<th>150分钟</th>-->
+                                        <!--<th>39</th>-->
+                                        <!--<th>A1<img class="change_movie" src="img/修改.png"></th>-->
+                                        <!--<th>9:20<img class="change_movie" src="img/修改.png"></th>-->
+                                        <!--<th class="remove_movie">删除</th>-->
+                                    <!--</tr>-->
+                                    <!--<tr id="a2">-->
+                                        <!--<th>复仇者联盟</th>-->
+                                        <!--<th>150分钟</th>-->
+                                        <!--<th>39</th>-->
+                                        <!--<th><span>A1</span><img class="change_movie" src="img/修改.png"></th>-->
+                                        <!--<th><span>9:20</span><img class="change_movie" src="img/修改.png"></th>-->
+                                        <!--<th class="remove_movie">删除</th>-->
+                                    <!--</tr>-->
+                                <!--</table>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="movie">-->
+                        <!--<div class="view_top"><span class="number">002</span> <span class="name">复仇者联盟</span><img src='img/right.png'class="up" data-num='no'></div>-->
+                        <!--<div class="view_body" style="display: none">-->
+                            <!--<div class="view_middle">-->
+                                <!--<img src="img/fczlm3.png">-->
+                                <!--<table cellspacing="15">-->
+                                    <!--<tr>-->
+                                        <!--<th>导演:</th>-->
+                                        <!--<th class="director">安东尼·罗素</th>-->
+                                    <!--</tr>-->
+
+                                    <!--<tr>-->
+                                        <!--<th>语种:</th>-->
+                                        <!--<th class="language">英语</th>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<th>类型:</th>-->
+                                        <!--<th class="type">动作/科幻/奇幻/冒险</th>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<th>片长:</th>-->
+                                        <!--<th class="time">150分钟</th>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<th>影片状态:</th>-->
+                                        <!--<th class="status">上线中</th>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<th>增加排片:</th>-->
+                                        <!--<th ><button class="addmovie">增加排片</button></th>-->
+                                    <!--</tr>-->
+                                <!--</table>-->
+                            <!--</div>-->
+                            <!--<div class="view_bottom">-->
+                                <!--<table class="count" id="movie2">-->
+                                    <!--<tr>-->
+                                        <!--<th>名称</th>-->
+                                        <!--<th>时长</th>-->
+                                        <!--<th>票价</th>-->
+                                        <!--<th>演出厅</th>-->
+                                        <!--<th>开始时间</th>-->
+                                        <!--<th>删除排片</th>-->
+                                    <!--</tr>-->
+                                    <!--<tr id="a3">-->
+                                        <!--<th>复仇者联盟</th>-->
+                                        <!--<th>150分钟</th>-->
+                                        <!--<th>39</th>-->
+                                        <!--<th><span>A1</span><img class="change_movie" src="img/修改.png"></th>-->
+                                        <!--<th><span>9:20</span><img class="change_movie" src="img/修改.png"></th>-->
+                                        <!--<th class="remove_movie">删除</th>-->
+                                    <!--</tr>-->
+                                    <!--<tr id="a4">-->
+                                        <!--<th>复仇者联盟</th>-->
+                                        <!--<th>150分钟</th>-->
+                                        <!--<th>39</th>-->
+                                        <!--<th><span>A1</span><img class="change_movie" src="img/修改.png"></th>-->
+                                        <!--<th><span>9:20</span><img class="change_movie" src="img/修改.png"></th>-->
+                                        <!--<th class="remove_movie">删除</th>-->
+                                    <!--</tr>-->
+                                <!--</table>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="movie">-->
+                        <!--<div class="view_top"><span class="number">003</span> <span class="name">复仇者联盟</span><img src='img/right.png'class="up" data-num='no'></div>-->
+                        <!--<div class="view_body" style="display: none">-->
+                            <!--<div class="view_middle">-->
+                                <!--<img src="img/fczlm3.png">-->
+                                <!--<table cellspacing="15">-->
+                                    <!--<tr>-->
+                                        <!--<th>导演:</th>-->
+                                        <!--<th class="director">安东尼·罗素</th>-->
+                                    <!--</tr>-->
+
+                                    <!--<tr>-->
+                                        <!--<th>语种:</th>-->
+                                        <!--<th class="language">英语</th>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<th>类型:</th>-->
+                                        <!--<th class="type">动作/科幻/奇幻/冒险</th>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<th>片长:</th>-->
+                                        <!--<th class="time">150分钟</th>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<th>影片状态:</th>-->
+                                        <!--<th class="status">上线中</th>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<th>增加排片:</th>-->
+                                        <!--<th ><button class="addmovie">增加排片</button></th>-->
+                                    <!--</tr>-->
+                                <!--</table>-->
+                            <!--</div>-->
+                            <!--<div class="view_bottom">-->
+                                <!--<table class="count" id="movie3">-->
+                                    <!--<tr>-->
+                                        <!--<th>名称</th>-->
+                                        <!--<th>时长</th>-->
+                                        <!--<th>票价</th>-->
+                                        <!--<th>演出厅</th>-->
+                                        <!--<th>开始时间</th>-->
+                                        <!--<th>删除排片</th>-->
+                                    <!--</tr>-->
+                                    <!--<tr id="a5">-->
+                                        <!--<th>复仇者联盟</th>-->
+                                        <!--<th>150分钟</th>-->
+                                        <!--<th>39</th>-->
+                                        <!--<th><span>A1</span><img class="change_movie" src="img/修改.png"></th>-->
+                                        <!--<th><span>9:20</span><img class="change_movie" src="img/修改.png"></th>-->
+                                        <!--<th class="remove_movie">删除</th>-->
+                                    <!--</tr>-->
+                                    <!--<tr id="a6">-->
+                                        <!--<th>复仇者联盟</th>-->
+                                        <!--<th>150分钟</th>-->
+                                        <!--<th>39</th>-->
+                                        <!--<th><span>A1</span><img class="change_movie" src="img/修改.png"></th>-->
+                                        <!--<th><span>9:20</span><img class="change_movie" src="img/修改.png"></th>-->
+                                        <!--<th class="remove_movie">删除</th>-->
+                                    <!--</tr>-->
+                                <!--</table>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <div class="buttons" style="width: 40%;margin: 0 auto">
+                        <button id="up_movie">引进影片</button>
+                        <button id="out_movie"style="background-color: red;margin-left: 20px">影片下线</button>
+                    </div>
+                </div>
+
+                <form class="look_add" style="display: none">
+                    <span id="close_look_add" style="position: absolute;right: 10px;cursor: pointer">x</span>
+                        <h3 style="margin:50px auto;width:70%;text-align: center;font-weight: normal;display: block;box-shadow: 3px 3px grey">请填写以下信息进行增加影片操作</h3>
+                        <table style="margin-top: 10px">
+                            <tr>
+                                <th>影片编号</th>
+                                <th><input class='input'></th>
+                            </tr>
+
+                            <tr>
+                                <th>演出厅:</th>
+                                <th>
+                                    <input class='input' >
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th>开始时间:</th>
+                                <th><input class='input' type="datetime-local"></th>
+                            </tr>
+
+                            <tr>
+                                <th>票价:</th>
+                                <th><input class='input' ></th>
+                            </tr>
+
+                        </table>
+                        <input type="button" class="ready_add" style="position: relative;left: 30%" value="确认增加">
+                </form>
+                <form class="look_up" style="display: none" enctype="multipart/form-data">
+                    <span id="close_look_up" style="position: absolute;right: 10px;cursor: pointer">x</span>
+                    <h3 style="margin:50px auto;width:70%;text-align: center;font-weight: normal;display: block;box-shadow: 3px 3px grey">填写新影片信息</h3>
+                    <table style="margin-top: 10px">
+                        <tr>
+                            <th>影片名称:</th>
+                            <th><input class='input' name="name"></th>
+                        </tr>
+
+                        <tr>
+                            <th>导演:</th>
+                            <th><input class='input' name="director"></th>
+                        </tr>
+
+                        <tr>
+                            <th>语种:</th>
+                            <th><input class='input' name="language"></th>
+                        </tr>
+
+                        <tr>
+                            <th>类型:</th>
+                            <th><input class='input' name="type"></th>
+                        </tr>
+
+                        <tr>
+                            <th>片长:</th>
+                            <th><input class='input' name="time"></th>
+                        </tr>
+                        <tr>
+                            <th>宣传图:</th>
+                            <th><input class='input' type="file" name="img"></th>
+                        </tr>
+                    </table>
+                    <input type="button" class="ready_up" style="position: relative;left: 30%" value="确认引进">
+                </form>
+                <form class="look_out" style="display: none">
+                    <span id="close_look_out" style="position: absolute;right: 10px;cursor: pointer">x</span>
+                    <h3 style="margin:50px auto;width:70%;text-align: center;font-weight: normal;display: block;box-shadow: 3px 3px grey">影片下线</h3>
+                    <table style="margin-top: 10px">
+                        <tr>
+                            <th>影片编号:</th>
+                            <th><input class='input'></th>
+                        </tr>
+
+
+                    </table>
+                    <input class="ready_out" style="position: relative;left: 30%;background-color: red" value="确认下线" type="button">
+                </form>
+            </div>
+        </div>
+
+        <div class="bot"id="people">
+            <div class="look">
+                <div class="over">
+                <table class="count3">
+                    <tr>
+                        <th>职位</th>
+                        <th>工号</th>
+                        <th>姓名</th>
+                        <th>电话</th>
+                        <th>email</th>
+                        <th>地址</th>
+                        <th>删除人员</th>
+                    </tr>
+                    
+                </table>
+                    <!--<button id='delete' style="margin-left: 130px;background-color: red;opacity:.7">删除员工</button>-->
+                    <button id='addone' style="margin-left: 130px;">增加员工</button>
+                </div>
+
+
+
+                <form class="form dis_s"  style="display: none;">
+                    <span id='close1' style="color: white;position: absolute;top:3px;right:8px;cursor: pointer;">x</span>
+                    <table style="margin-top: 50px" >
+                        <tr>
+                            <th>工号:</th>
+                            <th><input class='input'></th>
+                            <th><span  id="check_id"></span></th>
+                        </tr>
+
+                        <tr>
+                            <th>姓名:</th>
+                            <th><input class='input' ></th>
+                        </tr>
+
+                        <tr>
+                            <th>电话:</th>
+                            <th>
+                                <input class='input' type="tel">
+                            </th>
+                            <th><span  id="check_tel"></span></th>
+                        </tr>
+
+                        <tr>
+                            <th>email:</th>
+                            <th><input class='input' type="email"></th>
+                            <th><span   id="check_email"></span></th>
+                        </tr>
+
+                        <tr>
+                            <th>地址:</th>
+                            <th><input  class='input' ></th>
+                        </tr>
+                        <tr>
+                            <th>身份：</th>
+                            <th>
+                                <select>
+                                    <option value="经理">经理</option>
+                                    <option value="售票员">售票员</option>
+                                    <option value="保安">保安</option>
+                                    <option value="保洁">保洁</option>
+                                    <option value="售货员">售货员</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </table>
+                    <input type="button" value="确认增加" id='ready_add_people' style="position: relative;left: 30%"></input>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="bot" id="money">
+            <div class="look">
+                <table class="count">
+                    <tr>
+                        <th>影片名称</th>
+                        <th>票房</th>
+                    </tr>
+                   
+                </table>
+            </div>
+        </div>
+
+        <div class="bot" id="seat">
+            <div class="look" >
+                <div class="over">
+                    <table class="count3">
+                        <tr>
+                            <th>演出厅编号</th>
+                            <th>演出厅名字</th>
+                            <th>行数</th>
+                            <th>列数</th>
+                            <th>描述</th>
+                            <th>删除</th>
+                            <th>设计</th>
+                        </tr>
+                        
+                    </table>
+                    <input type="button"  value="增加演出厅" id='addroom' style="margin-left: 130px;">
+
+                    <div class="design" style="display: none;margin-top: 15px">
+                        <div style="display: flex;justify-content: space-between;"><span>点击座位取消座位存在</span><span id="close_design" style="align-self: flex-end;cursor: pointer">X</span></div>
+                        <div class="design_main">
+                            <div class="list">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                            </div>
+                            <table>
+                            </table>
+                        </div>
+                        <button class="ready_design" style="align-self: flex-end;position: relative;left: 40%">设计确认</button>
+                    </div>
+                </div>
+
+                <form class="form dis_s"  style="display: none;">
+                    <span id='close2' style="color: white;position: absolute;top:3px;right:8px;cursor: pointer;">x</span>
+                    <table style="margin-top: 50px" >
+                        <tr>
+                            <th>演出厅名字:</th>
+                            <th><input class='input'></th>
+                        </tr>
+
+                        <tr>
+                            <th>行数:</th>
+                            <th><input class='input' ></th>
+                        </tr>
+
+                        <tr>
+                            <th>列数:</th>
+                            <th>
+                                <input class='input' type="tel">
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>描述:</th>
+                            <th><textarea class='input' ></textarea></th>
+                        </tr>
+
+                    </table>
+                    <button  id='ready_add_room' style="position: relative;left: 30%">确认增加</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="black dis">
+    <form  class="dark-matter">
+        <span id="cut">X</span>
+        <h1>欢迎登录
+            <span>请填写以下信息.</span>
+        </h1>
+
+        <label>
+            <span>用户名:</span>
+            <input id="name" type="text" name="username" placeholder="用 户 名" value="" required/>
+            <p   id="check1" style="margin-top: -2%;margin-left: 25%" ></p>
+        </label>
+
+        <label>
+            <span>用户密码:</span>
+            <input id="email" type="password" name="password" placeholder="密 码" value="" require/>
+            <p   id="check2" style="margin-top: -2%;margin-left: 25%" ></p>
+        </label>
+
+        <label>
+            <span>你的身份:</span>
+            <select name="id">
+                <option value="manger">管理员</option>
+                <option value="user" selected>用户</option>
+            </select>
+        </label>
+
+        <label>
+            <span>&nbsp;</span>
+            <input type="button" class="button" value="登录" />
+        </label>
+        <a href="register.html">没有账号？快去注册-></a>
+    </form>
+</div>
+
+<script>
+    var RENDERER = {
+        INIT_CHERRY_BLOSSOM_COUNT : 30,
+        MAX_ADDING_INTERVAL : 10,
+
+        init : function(){
+            this.setParameters();
+            this.reconstructMethods();
+            this.createCherries();
+            this.render();
+        },
+        setParameters : function(){
+            this.$container = $('#jsi-cherry-container');
+            this.width = this.$container.width();
+            this.height = this.$container.height();
+            this.context = $('<canvas />').attr({width : this.width, height : this.height}).appendTo(this.$container).get(0).getContext('2d');
+            this.cherries = [];
+            this.maxAddingInterval = Math.round(this.MAX_ADDING_INTERVAL * 1000 / this.width);
+            this.addingInterval = this.maxAddingInterval;
+        },
+        reconstructMethods : function(){
+            this.render = this.render.bind(this);
+        },
+        createCherries : function(){
+            for(var i = 0, length = Math.round(this.INIT_CHERRY_BLOSSOM_COUNT * this.width / 1000); i < length; i++){
+                this.cherries.push(new CHERRY_BLOSSOM(this, true));
+            }
+        },
+        render : function(){
+            requestAnimationFrame(this.render);
+            this.context.clearRect(0, 0, this.width, this.height);
+
+            this.cherries.sort(function(cherry1, cherry2){
+                return cherry1.z - cherry2.z;
+            });
+            for(var i = this.cherries.length - 1; i >= 0; i--){
+                if(!this.cherries[i].render(this.context)){
+                    this.cherries.splice(i, 1);
+                }
+            }
+            if(--this.addingInterval == 0){
+                this.addingInterval = this.maxAddingInterval;
+                this.cherries.push(new CHERRY_BLOSSOM(this, false));
+            }
+        }
+    };
+    var CHERRY_BLOSSOM = function(renderer, isRandom){
+        this.renderer = renderer;
+        this.init(isRandom);
+    };
+    CHERRY_BLOSSOM.prototype = {
+        FOCUS_POSITION : 300,
+        FAR_LIMIT : 600,
+        MAX_RIPPLE_COUNT : 100,
+        RIPPLE_RADIUS : 100,
+        SURFACE_RATE : 0.5,
+        SINK_OFFSET : 20,
+
+        init : function(isRandom){
+            this.x = this.getRandomValue(-this.renderer.width, this.renderer.width);
+            this.y = isRandom ? this.getRandomValue(0, this.renderer.height) : this.renderer.height * 1.5;
+            this.z = this.getRandomValue(0, this.FAR_LIMIT);
+            this.vx = this.getRandomValue(-2, 2);
+            this.vy = -2;
+            this.theta = this.getRandomValue(0, Math.PI * 2);
+            this.phi = this.getRandomValue(0, Math.PI * 2);
+            this.psi = 0;
+            this.dpsi = this.getRandomValue(Math.PI / 600, Math.PI / 300);
+            this.opacity = 0;
+            this.endTheta = false;
+            this.endPhi = false;
+            this.rippleCount = 0;
+
+            var axis = this.getAxis(),
+                theta = this.theta + Math.ceil(-(this.y + this.renderer.height * this.SURFACE_RATE) / this.vy) * Math.PI / 500;
+            theta %= Math.PI * 2;
+
+            this.offsetY = 40 * ((theta <= Math.PI / 2 || theta >= Math.PI * 3 / 2) ? -1 : 1);
+            this.thresholdY = this.renderer.height / 2 + this.renderer.height * this.SURFACE_RATE * axis.rate;
+            this.entityColor = this.renderer.context.createRadialGradient(0, 40, 0, 0, 40, 80);
+            this.entityColor.addColorStop(0, 'hsl(330, 70%, ' + 50 * (0.3 + axis.rate) + '%)');
+            this.entityColor.addColorStop(0.05, 'hsl(330, 40%,' + 55 * (0.3 + axis.rate) + '%)');
+            this.entityColor.addColorStop(1, 'hsl(330, 20%, ' + 70 * (0.3 + axis.rate) + '%)');
+            this.shadowColor = this.renderer.context.createRadialGradient(0, 40, 0, 0, 40, 80);
+            this.shadowColor.addColorStop(0, 'hsl(330, 40%, ' + 30 * (0.3 + axis.rate) + '%)');
+            this.shadowColor.addColorStop(0.05, 'hsl(330, 40%,' + 30 * (0.3 + axis.rate) + '%)');
+            this.shadowColor.addColorStop(1, 'hsl(330, 20%, ' + 40 * (0.3 + axis.rate) + '%)');
+        },
+        getRandomValue : function(min, max){
+            return min + (max - min) * Math.random();
+        },
+        getAxis : function(){
+            var rate = this.FOCUS_POSITION / (this.z + this.FOCUS_POSITION),
+                x = this.renderer.width / 2 + this.x * rate,
+                y = this.renderer.height / 2 - this.y * rate;
+            return {rate : rate, x : x, y : y};
+        },
+        renderCherry : function(context, axis){
+            context.beginPath();
+            context.moveTo(0, 40);
+            context.bezierCurveTo(-60, 20, -10, -60, 0, -20);
+            context.bezierCurveTo(10, -60, 60, 20, 0, 40);
+            context.fill();
+
+            for(var i = -4; i < 4; i++){
+                context.beginPath();
+                context.moveTo(0, 40);
+                context.quadraticCurveTo(i * 12, 10, i * 4, -24 + Math.abs(i) * 2);
+                context.stroke();
+            }
+        },
+        render : function(context){
+            var axis = this.getAxis();
+
+            if(axis.y == this.thresholdY && this.rippleCount < this.MAX_RIPPLE_COUNT){
+                context.save();
+                context.lineWidth = 2;
+                context.strokeStyle = 'hsla(0, 0%, 100%, ' + (this.MAX_RIPPLE_COUNT - this.rippleCount) / this.MAX_RIPPLE_COUNT + ')';
+                context.translate(axis.x + this.offsetY * axis.rate * (this.theta <= Math.PI ? -1 : 1), axis.y);
+                context.scale(1, 0.3);
+                context.beginPath();
+                context.arc(0, 0, this.rippleCount / this.MAX_RIPPLE_COUNT * this.RIPPLE_RADIUS * axis.rate, 0, Math.PI * 2, false);
+                context.stroke();
+                context.restore();
+                this.rippleCount++;
+            }
+            if(axis.y < this.thresholdY || (!this.endTheta || !this.endPhi)){
+                if(this.y <= 0){
+                    this.opacity = Math.min(this.opacity + 0.01, 1);
+                }
+                context.save();
+                context.globalAlpha = this.opacity;
+                context.fillStyle = this.shadowColor;
+                context.strokeStyle = 'hsl(330, 30%,' + 40 * (0.3 + axis.rate) + '%)';
+                context.translate(axis.x, Math.max(axis.y, this.thresholdY + this.thresholdY - axis.y));
+                context.rotate(Math.PI - this.theta);
+                context.scale(axis.rate * -Math.sin(this.phi), axis.rate);
+                context.translate(0, this.offsetY);
+                this.renderCherry(context, axis);
+                context.restore();
+            }
+            context.save();
+            context.fillStyle = this.entityColor;
+            context.strokeStyle = 'hsl(330, 40%,' + 70 * (0.3 + axis.rate) + '%)';
+            context.translate(axis.x, axis.y + Math.abs(this.SINK_OFFSET * Math.sin(this.psi) * axis.rate));
+            context.rotate(this.theta);
+            context.scale(axis.rate * Math.sin(this.phi), axis.rate);
+            context.translate(0, this.offsetY);
+            this.renderCherry(context, axis);
+            context.restore();
+
+            if(this.y <= -this.renderer.height / 4){
+                if(!this.endTheta){
+                    for(var theta = Math.PI / 2, end = Math.PI * 3 / 2; theta <= end; theta += Math.PI){
+                        if(this.theta < theta && this.theta + Math.PI / 200 > theta){
+                            this.theta = theta;
+                            this.endTheta = true;
+                            break;
+                        }
+                    }
+                }
+                if(!this.endPhi){
+                    for(var phi = Math.PI / 8, end = Math.PI * 7 / 8; phi <= end; phi += Math.PI * 3 / 4){
+                        if(this.phi < phi && this.phi + Math.PI / 200 > phi){
+                            this.phi = Math.PI / 8;
+                            this.endPhi = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            if(!this.endTheta){
+                if(axis.y == this.thresholdY){
+                    this.theta += Math.PI / 200 * ((this.theta < Math.PI / 2 || (this.theta >= Math.PI && this.theta < Math.PI * 3 / 2)) ? 1 : -1);
+                }else{
+                    this.theta += Math.PI / 500;
+                }
+                this.theta %= Math.PI * 2;
+            }
+            if(this.endPhi){
+                if(this.rippleCount == this.MAX_RIPPLE_COUNT){
+                    this.psi += this.dpsi;
+                    this.psi %= Math.PI * 2;
+                }
+            }else{
+                this.phi += Math.PI / ((axis.y == this.thresholdY) ? 200 : 500);
+                this.phi %= Math.PI;
+            }
+            if(this.y <= -this.renderer.height * this.SURFACE_RATE){
+                this.x += 2;
+                this.y = -this.renderer.height * this.SURFACE_RATE;
+            }else{
+                this.x += this.vx;
+                this.y += this.vy;
+            }
+            return this.z > -this.FOCUS_POSITION && this.z < this.FAR_LIMIT && this.x < this.renderer.width * 1.5;
+        }
+    };
+    $(function(){
+        RENDERER.init();
+    });</script>
+</body>
+</body></html>

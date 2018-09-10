@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>咸鱼影业</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!--<script src="https://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>-->
+    <script src="../jquery-1.7.2/jquery.js" ></script>
+    <script src="../carhartl-jquery-cookie-92b7715/jquery.cookie.js"></script>
+    <script src="js/status.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/canvas_bg.js" ></script>
+
+</head>
+<body>
+    <!--<div class="container">-->
+        <!--<canvas id="snow" ></canvas>-->
+    <!--</div>-->
+    <canvas id="c" style="position: fixed;z-index: -1;text-align: center;top: 0;bottom: 0;height: 100%"></canvas>
+    <div id="top">
+        <img src="img/logo4.png">
+        <ul class='top_left'>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="movie.html">购票</a></li>
+            <li><a href="paihangbang.html">排行榜</a></li>
+        </ul>
+
+        <ul id="huan">
+            <li id="login">登录</li>
+            <li id="register"><a href="register.html">注册</a></li>
+        </ul>
+
+    </div>
+    
+    <div id="main">
+        <div class="main_find">
+            <div class="find">
+                <input placeholder="  这一刻，搜索你想看的" value="">
+                <button>搜索</button>
+                <div class="li"></div>
+            </div>
+        </div>
+
+        <div class="lun">
+            <div class="count">
+                <div class="all">
+                    <a><img  src="img/lun1.jpg" ></a>
+                    <a><img src="img/lun2.jpg" style="display: none"></a>
+                    <a><img src="img/lun3.jpg" style="display: none"></a>
+                </div>
+                <span id="one"> < </span>
+                <span id="two"> > </span>
+            </div>
+        </div>
+
+
+        <div class="ing">
+            <div class="ing_left">
+                <span id="much" style="color: #ff3f36;font-size: 30px;position: relative;top: 5%;left: 3%">正在热映(31部)</span>
+                <a href="movie.html" style="text-decoration:none;color: #ff3f36;font-size: 15px;position: absolute;top: 5%;right: 8%">全部></a>
+                <div class="show lazyload">
+
+                  
+
+                </div>
+            </div>
+            <div class="ing_right">
+                <h2 style="color: rgb(242,66,56)">今日票房</h2>
+                <ol>
+                    
+                </ol>
+            </div>
+        </div>
+
+
+        <div class="fur">
+            <div class="ing_left">
+                <span style="color: #ff3f36;font-size: 30px;position: relative;top: 5%;left: 3%">即将上映(31部)</span>
+                <a href=" " style="text-decoration:none;color: #ff3f36;font-size: 15px;position: absolute;top: 5%;right: 8%">全部></a>
+                <div class="show lazyload">
+                    <div class="show_div">
+                        <img data-img="img/img9.jpg@160w_220h_1e_1c" src="img/blank.jpg">
+                        <div><a href="">购票</a></div>
+                        <div class="name"><p>雾都神探</p></div>
+                    </div>
+                    <div class="show_div">
+                        <img data-img="img/img10.jpg@160w_220h_1e_1c" src="img/blank.jpg">
+                        <div><a href="">购票</a></div>
+                        <div class="name"><p>神偷通天</p></div>
+                    </div >
+                    <div class="show_div">
+                        <img data-img="img/img11.jpg@160w_220h_1e_1c" src="img/blank.jpg">
+                        <div><a href="">购票</a></div>
+                        <div class="name"><p>西小河的夏天</p></div>
+                    </div>
+                    <div class="show_div">
+                        <img data-img="img/img12.jpg@160w_220h_1e_1c" src="img/blank.jpg">
+                        <div><a href="">购票</a></div>
+                        <div class="name"><p>给19岁的自己</p></div>
+                    </div>
+                    <div class="show_div">
+                        <img data-img="img/img13.jpg@160w_220h_1e_1c" src="img/blank.jpg" >
+                        <div><a href="">购票</a></div>
+                        <div class="name"><p>复仇者联盟三</p></div>
+                    </div>
+                    <div class="show_div">
+                        <img data-img="img/img14.jpg@160w_220h_1e_1c"src="img/blank.jpg">
+                        <div><a href="">购票</a></div>
+                        <div class="name"><p>完美的陌生人</p></div>
+                    </div>
+                    <div class="show_div">
+                        <img data-img="img/img15.jpg@160w_220h_1e_1c"src="img/blank.jpg">
+                        <div><a href="">购票</a></div>
+                        <div class="name"><p>急运速递</p></div>
+                    </div>
+                    <div class="show_div">
+                        <img data-img="img/img3.jpg@160w_220h_1e_1c"src="img/blank.jpg" >
+                        <div><a href="">购票</a></div>
+                        <div class="name"><p>游侠索罗</p></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="ing_right">
+                <h2 style="color: rgb(242,66,56)">期待排行</h2>
+                <ol>
+                    <li>侏罗纪事件2</li>
+                    <li>爱情公寓</li>
+                    <li>狄仁杰之四大天王</li>
+                    <li>新乌龙院之笑闹江湖</li>
+                    <li>哆啦A梦：大雄的金银岛</li>
+
+                    <li>动物世界</li>
+                    <li>金蝉脱壳2</li>
+                    <li>游侠索罗</li>
+                    <li>新哥斯拉</li>
+                    <li>一出好戏</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="foot">
+            <p>开发小组：咸鱼影业旗下软工1602张鑫小组</p>
+            <p>隶属于：陕西西安咸鱼影业传媒有限公司</p>
+            <p>违法和不良信息举报电话: 18392120131 举报邮箱:1132256103@qq.com</p>
+            <p>友情链接：http://www.xiyou.edu.cn/</p>
+    </div>
+
+    <div class="black dis">
+    <form  class="dark-matter">
+        <span id="cut">X</span>
+        <h1>欢迎登录
+            <span>请填写以下信息.</span>
+        </h1>
+
+        <label>
+            <span>用户名:</span>
+            <input id="name" type="text" name="username" placeholder="用 户 名" value="" required/>
+            <p   id="check1" style="margin-top: -2%;margin-left: 25%" ></p>
+        </label>
+
+        <label>
+            <span>用户密码:</span>
+            <input id="email" type="password" name="password" placeholder="密 码" value="" require/>
+            <p   id="check2" style="margin-top: -2%;margin-left: 25%" ></p>
+        </label>
+
+        <label>
+            <span>你的身份:</span>
+            <select name="id">
+                <option value="manger">管理员</option>
+                <option value="user" selected>用户</option>
+            </select>
+        </label>
+
+        <label>
+            <span>&nbsp;</span>
+            <input type="button" class="button" value="登录" />
+        </label>
+        <a href="register.html">没有账号？快去注册-></a>
+    </form>
+</div>
+
+
+    <a id='fang' href="#">
+        <div id="box">
+            <div><div></div><div></div></div>
+            <div><div></div><div> 影 业</div></div>
+            <div><div></div><div></div></div>
+            <div><div></div><div>欢</div></div>
+            <div><div></div><div> 咸 鱼</div></div>
+            <div><div></div><div></div></div>
+        </div>
+    </a>
+
+    <!--<script src="js/snow.js"></script>-->
+</body>
+</html>
